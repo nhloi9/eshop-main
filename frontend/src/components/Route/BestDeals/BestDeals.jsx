@@ -19,7 +19,7 @@ const BestDeals = () => {
 				return b.sold_out - a.sold_out;
 			});
 		const firstFive =
-			sortedData && sortedData && sortedData.length > 0 && sortedData.slice(0, 5);
+			sortedData && sortedData && sortedData.length > 0 && sortedData.slice(0, 10);
 		setData(firstFive);
 	}, [allProducts]);
 

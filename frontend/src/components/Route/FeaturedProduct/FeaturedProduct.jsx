@@ -14,6 +14,7 @@ const FeaturedProduct = () => {
 		allProductsData.sort((a, b) => {
 			return (b.ratings || 0) - (a.ratings || 0);
 		});
+	sortedData = sortedData.slice(0, 10);
 
 	return (
 		<div>

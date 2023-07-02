@@ -15,7 +15,7 @@ const BestSellingPage = () => {
 
 	useEffect(() => {
 		let productData = allProducts ? [...allProducts] : [];
-		const d = productData.sort((a, b) => b.sold_out - a.sold_out);
+		const d = productData.sort((a, b) => b.sold_out - a.sold_out).slice(0, 30);
 		setData(d);
 	}, [allProducts]);
 	// console.log('productPage');
